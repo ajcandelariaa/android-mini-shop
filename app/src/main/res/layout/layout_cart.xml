@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:scaleType="center"
+        android:background="#000"
+        android:contentDescription="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/cbx_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 1" />
+
+            <CheckBox
+                android:id="@+id/cbx_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 2" />
+
+            <CheckBox
+                android:id="@+id/cbx_item3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 3" />
+
+            <CheckBox
+                android:id="@+id/cbx_item4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 4" />
+
+            <CheckBox
+                android:id="@+id/cbx_item5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 5" />
+
+            <CheckBox
+                android:id="@+id/cbx_item6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 6" />
+
+            <CheckBox
+                android:id="@+id/cbx_item7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 7" />
+
+            <CheckBox
+                android:id="@+id/cbx_item8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 8" />
+
+            <CheckBox
+                android:id="@+id/cbx_item9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 9" />
+
+            <CheckBox
+                android:id="@+id/cbx_item10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/ic_launcher_background"
+                android:drawablePadding="20dp"
+                android:text="Item 10" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

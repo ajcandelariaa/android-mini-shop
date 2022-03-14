@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_buy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_loading"
+    android:padding="10sp"
+    tools:context=".HomepageActivity">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/brand_name"
+        android:textColor="@color/title_color"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="#EFEFEF"
+        android:drawableRight="@drawable/ic_baseline_login_24"
+        android:fontFamily="@font/audiowide"
+        android:onClick="showLogin"
+        android:text="@string/btn_login"
+        android:textColorHighlight="@color/btn_color"
+        android:textColorLink="#FFFFFF"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/belgrano"
+        android:text="@string/tv_bestseller"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="365dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_shoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/belgrano"
+        android:text="@string/tv_brands"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/iv_shoes1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.789" />
+
+            <TextView
+                android:id="@+id/tv_brand1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/belgrano"
+                android:text="@string/brand1"
+                android:textColor="@color/sub_text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_shoes1"
+                app:layout_constraintEnd_toEndOf="@+id/iv_shoes1"
+                app:layout_constraintStart_toStartOf="@+id/iv_shoes1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/iv_shoes2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_nike"
+                app:layout_constraintStart_toEndOf="@+id/iv_shoes1"
+                app:layout_constraintTop_toTopOf="@+id/iv_shoes1" />
+
+            <TextView
+                android:id="@+id/tv_brand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/belgrano"
+                android:text="@string/brand2"
+                android:textColor="@color/sub_text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_shoes2"
+                app:layout_constraintEnd_toEndOf="@+id/iv_shoes2"
+                app:layout_constraintStart_toStartOf="@+id/iv_shoes2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/iv_shoes3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_converse"
+                app:layout_constraintStart_toEndOf="@+id/iv_shoes2"
+                app:layout_constraintTop_toTopOf="@+id/iv_shoes2" />
+
+            <TextView
+                android:id="@+id/tv_brand3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/belgrano"
+                android:text="@string/brand3"
+                android:textColor="@color/sub_text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_shoes3"
+                app:layout_constraintEnd_toEndOf="@+id/iv_shoes3"
+                app:layout_constraintStart_toStartOf="@+id/iv_shoes3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/iv_shoes4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_reebok"
+                app:layout_constraintStart_toEndOf="@+id/iv_shoes3"
+                app:layout_constraintTop_toTopOf="@+id/iv_shoes3" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/belgrano"
+                android:text="brand4"
+                android:textColor="@color/sub_text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_shoes4"
+                app:layout_constraintEnd_toEndOf="@+id/iv_shoes4"
+                app:layout_constraintStart_toStartOf="@+id/iv_shoes4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/iv_shoes5"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/ic_adidas"
+                app:layout_constraintStart_toEndOf="@+id/iv_shoes4"
+                app:layout_constraintTop_toTopOf="@+id/iv_shoes4" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/belgrano"
+                android:text="brand5"
+                android:textColor="@color/sub_text"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/iv_shoes4"
+                app:layout_constraintEnd_toEndOf="@+id/iv_shoes5"
+                app:layout_constraintStart_toStartOf="@+id/iv_shoes5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

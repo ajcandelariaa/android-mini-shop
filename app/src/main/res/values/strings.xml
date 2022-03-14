@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TechnicalSummative3</string>
+
+    <string name="loading_text">Welcome To ALT WAV Store</string>
+
+    <string name="brand_name">ALT WAV</string>
+    <string name="btn_login">Login</string>
+    <string name="tv_bestseller">Best Seller</string>
+    <string name="tv_brands">Popular Brands</string>
+
+    <string name="brand1">JORDAN</string>
+    <string name="brand2">NIKE</string>
+    <string name="brand3">CONVERSE</string>
+    <string name="brand4">REEBOK</string>
+    <string name="brand5">ADIDAS</string>
+
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+
+</resources>
